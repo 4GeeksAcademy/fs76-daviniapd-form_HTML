@@ -10,14 +10,17 @@
 <body>
     <div class="card mx-auto my-5 p-0 rounded-3" style="width: 50%;">
         <div class="card-body p-0">
+
          <!-- title form -->
           <div class="title bg-secondary text-dark bg-opacity-10 px-3 pt-2 pb-1 border-bottom border-secondary-subtle">
             <h2 class="card-title">This is not a gift. Pay it!</h2>
           </div>
+
          <!-- alert error -->
           <div class="alert alert-danger m-3" role="alert">
             Some fields are missing
           </div>
+
          <!-- form start -->
            <form class="row g-3 p-3"  action="https://special-space-waddle-wr97x6j4749p39v5r-3000.app.github.dev/">
             <!-- first row -->
@@ -94,11 +97,18 @@
                   </div>
                 </div>
                 </div>
-                <div class="col-md-6">
-                    mesagge
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Sign in</button>
+                <div class="col-md-6 mb-3">
+                    <label for="exampleMessage" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleMessage" rows="3"></textarea>
+                    <div id="messageHelpBlock" class="form-text">
+                        Add any notes here.
+                      </div>
+                  </div>
+
+                <!-- submit and cancel buttons -->
+                <div class="col-12 bg-secondary text-dark bg-opacity-10 px-3 pt-2 pb-1 border-top border-secondary-subtle"">
+                  <button type="cancel" class="btn btn-secondary">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Send</button>
                 </div>
               </form>
         </div>
