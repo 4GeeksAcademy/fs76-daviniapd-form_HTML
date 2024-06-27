@@ -10,7 +10,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .input-wrapper span {
     margin-right: 10px;
   }
-
+  
 #cardButtons {
     width: fit-content;
 }
