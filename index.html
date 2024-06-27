@@ -22,7 +22,9 @@
           </div>
 
          <!-- form start -->
-           <form class="row g-3 p-3"  action="https://special-space-waddle-wr97x6j4749p39v5r-3000.app.github.dev/">
+          <form action="https://special-space-waddle-wr97x6j4749p39v5r-3000.app.github.dev/">
+            <div class="row g-3 p-3 pb-0">
+
             <!-- first row -->
                <div class="col-md-5">
                   <label for="inputCard" class="form-label">Card #</label>
@@ -33,9 +35,13 @@
                   <input type="number" class="form-control" max="9999" id="inputCvc" placeholder="0000">
                 </div>
                 <div class="col-md-4">
-                    <label for="inputAmount" class="form-label">Amount €</label>
+                    <label for="inputAmount" class="form-label">Amount</label>
+                    <div class="input-wrapper">
+                      <span id="euros">€</span>
                     <input type="number" class="form-control" id="inputAmount" placeholder="Amount">
-                  </div>
+                    </div>
+                </div>
+
             <!-- second row -->
                 <div class="col-6">
                   <label for="inputFirstName" class="form-label">First Name</label>
@@ -45,6 +51,7 @@
                   <label for="inputLastName" class="form-label">Last Name</label>
                   <input type="text" class="form-control" id="inputLastName" placeholder="">
                 </div>
+
             <!-- third row -->
                 <div class="col-md-6">
                   <label for="inputCity" class="form-label">City</label>
@@ -67,10 +74,12 @@
                   <label for="inputPostalCode" class="form-label">Postal Code</label>
                   <input type="number" class="form-control" max="99999" id="inputPostalCode">
                 </div>
+
             <!-- fourth row -->
-                <div class="col-md-6">
+              <!-- buttons cards -->
+              <div class="col-md-6">
                     We accept:
-                 <div class="bg-secondary text-white my-3 p-2 rounded">
+                <div class="bg-secondary text-white my-3 p-2 pe-0 rounded" id="cardButtons">
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
@@ -96,23 +105,28 @@
                     </label>
                   </div>
                 </div>
-                </div>
+              </div>
+
+              <!-- textarea message -->
                 <div class="col-md-6 mb-3">
                     <label for="exampleMessage" class="form-label">Message</label>
                     <textarea class="form-control" id="exampleMessage" rows="3"></textarea>
                     <div id="messageHelpBlock" class="form-text">
                         Add any notes here.
-                      </div>
-                  </div>
-
-                <!-- submit and cancel buttons -->
-                <div class="col-12 bg-secondary text-dark bg-opacity-10 px-3 pt-2 pb-1 border-top border-secondary-subtle"">
-                  <button type="cancel" class="btn btn-secondary">Cancel</button>
-                  <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
                 </div>
-              </form>
+            </div>
+
+            <!-- submit and cancel buttons -->
+            <div class="footer bg-secondary text-dark bg-opacity-10 p-3 pe-2 d-md-flex justify-content-md-end border-top border-secondary-subtle"> 
+              <button type="cancel" class="btn btn-secondary m-1">Cancel</button>
+              <button type="submit" class="btn btn-primary m-1">Send</button>
+            </div>
+          </form>
+        <!-- form end -->
+
         </div>
-      </div>
+    </div>
       
   <script src="https://kit.fontawesome.com/151280d658.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

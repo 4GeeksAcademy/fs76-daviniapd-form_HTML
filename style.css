@@ -1,0 +1,16 @@
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-wrapper span {
+    margin-right: 10px;
+  }
+
+#cardButtons {
+    width: fit-content;
+}
